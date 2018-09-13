@@ -61,13 +61,44 @@
 		<label for="range">input[type:checkbox]</label>
 		<input type="range" min="0" maxlength="100" step="1" id="checkbox-2" name="amount" />
 
+        <label for="color">input[type:checkbox]</label>
+		<input type="color"  id="colorPicker" name="color" />
+		<label>
+			<input type="checkbox">
+			Check this box
+		</label>
+		<label for="textarea"></label>
+		<textarea name="" id="textarea" cols="30" rows="10" placeholder="Write inside the BOX!" ></textarea>
+		<label for="up-to-five"></label>
+		<select name="select-numbers" autocomplete="off" id="up-to-five">
+			<option value="1" selected >Please Choose a Value</option>
+			<option value="2">bir</option>
+			<option value="3">iki</option>
+			<option value="4">üç</option>
+			<option value="5">dört</option>
+			
+		</select>
+
+		<select name="select-numbers" autocomplete="off" id="up-to-five" disabled>
+			<option value="1" selected >Please Choose a Value</option>
+			<option value="2">1</option>
+			<option value="3">2</option>
+			<option value="4">3</option>
+			<option value="5">4</option>
+			
+		</select>
+
+		<label for="i-text" >input[list]</label>
+		<input id="i-text" list="people" type="text" />
+		<datalist id="people" >
+			<options value="Moaz" ></options>
+			<options value="Halit" ></options>
+			<options value="Stephen" ></options>
+		</datalist>
+
+
 
 	</form>
-		
-
-		<div class="thing">
-			
-		</div>
 	<script src="js/forms.js" ></script>
 </body>
 </html>

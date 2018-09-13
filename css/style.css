@@ -1,37 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding-bottom: 3rem;
+}
+
 label{
 	display:block;
 	font-size: 0.75rem;
 	width: 100%;
 }
 
-input{
+input,
+textarea{
 	display: block;
 	border-radius: 0;
 	border:1px solid grey;
 	background-color: white;
 	width: 100%;
 }
-input:focus{
+input:focus,
+textarea:focus{
 	border-color: #34dd99;
 	outline: 0;
 }
-input:disabled{
+
+[type="tel"],
+[type="url"],
+[type="date"],
+[type="text"],
+[type="time"],
+[type="week"],
+[type="month"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="password"]{
+	padding-left: 0;
+	padding-right: 0;
+	text-indent: 0.25rem;
+}
+
+
+input:disabled,
+textarea:disabled,
+select:disabled {
 	opacity: 0.3;s
 }
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
 	font-style: italic;
 }
-input:valid {
+input:valid,
+textarea:valid {
 	border-color: green;
 }
 
-input:invalid {
+input:invalid,
+textarea:invalid {
 	border-color: red;
 }
-input:required {
+input:required,
+textarea:required,
+select:required {
 	background-color: #ffeecc;
 }
-input + label {
+input + label,
+input + select,
+select + select{
 	margin-top: 0.625rem;
 }
 
@@ -43,13 +80,18 @@ input + label {
 [type="range"]{
 	border-width: 0;
 }
-.thing{
-	width: 1.25rem;
-	height: 1.25rem;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgb(231,134,112);
-	border-radius: 50%;
+
+label > input{
+	display: inline-block;
+}
+textarea{
+	min-height: 3.75rem;
+	resize: none;
+}
+
+select{
+	display: block;
+	width: 20%;
+	height: 2.25rem;
 
 }
