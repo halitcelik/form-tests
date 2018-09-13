@@ -1,34 +1,35 @@
-
-var form = document.querySelector('form');
+var form  = document.querySelector('form');
 var thing = document.querySelector('.thing');
-var body = document.querySelector('body');
-rgb = [];
 
-form.addEventListener('input', function(e){
-	if (e.target.name === 'amount'){
-		const value = parseFloat(e.target.value);
+console.log('what?')
+const properties = {
+    'font-family': function(node, value) {
+    	node.style.fontFamily = value;
+    },
+    'font-size': function(node, value){
+    	node.style.fontSize = value + 'rem';
 
-		const topValue = Math.sin((value / 100) * Math.PI)
+    },
+    'rotate': function(node, value){
+    	node.style.transform = 'rotate(' +value+ 'deg)';
+    },
+    'font-size': function(node, value){
+    	node.style.padding = value + 'rem';
+    },
+    'font-size': function(node, value){
+    	node.style.width = value + 'rem';
+    },
+    'font-size': function(node, value){
+    	node.style.height = value + 'rem';
+    }
+}
 
 
+form.addEventListener('input', function(e) {
+    const input = e.target;
+    const name  = input.name;
+    const value = input.value;
 
-		thing.style.top = topValue * 100 + 'vh';
-
-		thing.style.left = value + 'vw';
-
-
-
-		rgb = [
-        value,
-        value * 2,
-        value / 2
-		];
-
-		thing.style.width = value/10 + 'rem';
-		thing.style.height = value/10 + 'rem';
-		thing.style.backgroundColor = "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ");";
-	    console.log(thing.style.backgroundColor = "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ")");
-	}
-
+    properties[name](thing,value);
 });
 

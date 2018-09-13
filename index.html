@@ -10,7 +10,7 @@
 
 <body>
 
-	<form action="">
+	<form action="GET"> <!-- POST,  -->
 		<label>Text disabled</label>
 		<input disabled/>
 
@@ -91,12 +91,52 @@
 		<label for="i-text" >input[list]</label>
 		<input id="i-text" list="people" type="text" />
 		<datalist id="people" >
-			<options value="Moaz" ></options>
-			<options value="Halit" ></options>
-			<options value="Stephen" ></options>
+			<option value="Moaz" ></option>
+			<option value="Halit" ></option>
+			<option value="Stephen" ></option>
 		</datalist>
 
 
+		<option value=""></option>
+
+
+
+	</form>
+
+	<form action="GET"> <!-- POST, HEAD, OPTIONS -->
+		
+		<label for="checkbox-3">input[type:checkbox]</label>
+		<input class="masked" type="checkbox" id="checkbox-3"/>
+		<label class="tag-label" for="checkbox-3">Add Some More Text</label>
+
+		<label for="checkbox-4">input[type:checkbox]</label>
+		<input class="masked" type="checkbox" id="checkbox-4"/>
+		<label class="switch-label" for="checkbox-4">Danger</label>
+		
+<div class="radios-block block">
+	
+	<input class="masked" type="radio" id="input-radio-moaz" value="moaz" name="team-member" />
+	<label class="radio-label" for="input-radio-moaz" >Moaz</label>
+	<input class="masked" type="radio" id="input-radio-halit" value="halit" name="team-member" />
+	<label class="radio-label" for="input-radio-halit">Halit</label>
+	<input class="masked" type="radio" id="input-radio-stephen" value="stephen" name="team-member" />
+	<label class="radio-label" for="input-radio-stephen">Stephen</label>
+
+</div>
+
+
+<label for="unit-select">Select Buttons</label>
+<label class="select-button button" for="">
+
+	<select name="select-numbers" autocomplete="off" id="unit-selectors">
+			<option value="choose" selected >Please Choose a Unit</option>
+			<option value="em">em</option>
+			<option value="rem">rem</option>
+			<option value="%">%</option>
+			<option value="px">px</option>
+		</select>
+	
+</label>
 
 	</form>
 	<script src="js/forms.js" ></script>

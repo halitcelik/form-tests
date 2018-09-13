@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Editor</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+	<form action="" class="controls-form">
+		<div class="radios-block">
+			<input class="masked" type="radio" id="input-font-family-helvetica" name="font-family" value="Helvetica" />
+			<label for="input-font-family-helvetica" class="radio-label" >Helvetica</label>
+			<input class="masked" type="radio" id="input-font-family-georgia" value="halit" name="font-family" value="Georgia" />
+			<label for="input-font-family-georgia" class="radio-label" >Georgia</label>
+			<input class="masked" type="radio" id="input-font-family-courier" name="font-family" value="Courier" />
+			<label for="input-font-family-courier" class="radio-label" >Courier</label>
+		</div>
+
+			
+			<label for="input-font-size">Font-size</label>
+			<input id="input-font-size" type"number" min="0" max="5" step="0.0625" name="fontSize" >
+
+			
+			<label for="input-rotate"></label>
+			<input id="input-rotate" type="range" min="0" max="360" step="0.1" name="rotate"  >
+
+		
+
+	</form>
+
+	<section class="editor-block block">
+		<div class="thing">
+			Thing
+		</div>
+	</section>
+
+
+<script type="module" src="js/editor.js" ></script>
+</body>
+</html>
