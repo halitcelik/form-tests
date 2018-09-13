@@ -8,18 +8,19 @@ const properties = {
     },
     'font-size': function(node, value){
     	node.style.fontSize = value + 'rem';
+    	console.log(value)
 
     },
     'rotate': function(node, value){
     	node.style.transform = 'rotate(' +value+ 'deg)';
     },
-    'font-size': function(node, value){
+    'padding': function(node, value){
     	node.style.padding = value + 'rem';
     },
-    'font-size': function(node, value){
+    'width': function(node, value){
     	node.style.width = value + 'rem';
     },
-    'font-size': function(node, value){
+    'height': function(node, value){
     	node.style.height = value + 'rem';
     }
 }
