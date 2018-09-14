@@ -191,12 +191,12 @@ select{
 }
 
 .radios-block{
-	display: flex;
-
-
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1px;
 }
 .radios-block > *{
-	display: flex;
+
 	margin-bottom: 2rem;
 }
 
@@ -303,4 +303,8 @@ but only in browsers where removing the style does NOT break the select
 
 .editor-block{
 	overflow: hidden;
+}
+.color-pickers{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }

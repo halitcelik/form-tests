@@ -29,7 +29,11 @@ body{
 	background-color: white;
 	margin: auto;
 }
-
-input{
-	
+body{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }

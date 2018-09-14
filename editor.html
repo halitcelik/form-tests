@@ -8,17 +8,19 @@
 </head>
 <body>
 	<form action="" class="controls-form">
+			
+		<div class="first-column">
 			<input type="textarea" placeholder="Please Enter Some Text" id="input-text" name="text">
 			<label for="input-text" class="textarea"></label>
-		<div class="radios-block">
-			<input class="masked" type="radio" id="input-font-family-helvetica" name="font-family" value="Helvetica" />
-			<label for="input-font-family-helvetica" class="radio-label" >Helvetica</label>
-			<input class="masked" type="radio" id="input-font-family-georgia" value="halit" name="font-family" value="Georgia" />
-			<label for="input-font-family-georgia" class="radio-label" >Georgia</label>
-			<input class="masked" type="radio" id="input-font-family-courier" name="font-family" value="Courier" />
-			<label for="input-font-family-courier" class="radio-label" >Courier</label>
-			
-		</div>
+
+			<div class="radios-block">
+				<input class="masked" type="radio" id="input-font-family-helvetica" name="font-family" value="Helvetica" />
+				<label for="input-font-family-helvetica" class="radio-label" >Helvetica</label>
+				<input class="masked" type="radio" id="input-font-family-georgia" value="halit" name="font-family" value="Georgia" />
+				<label for="input-font-family-georgia" class="radio-label" >Georgia</label>
+				<input class="masked" type="radio" id="input-font-family-courier" name="font-family" value="Courier" />
+				<label for="input-font-family-courier" class="radio-label" >Courier</label>
+			</div>
 
 			
 			<label for="input-font-size">Font Size</label>
@@ -43,14 +45,19 @@
 
 			<label for="input-border-radius">Border Radius</label>
 			<input id="input-border-radius" type="number" min="0" max="0.5" step="0.01" name="border-radius" >
-
 			<div class="color-pickers">
 				<label for="input-color">Color</label>
-				<input id="input-color" type="color" name="color" shape="poly" >
-
 				<label for="input-background-color">Background Color</label>
+				<input id="input-color" type="color" name="color" shape="poly" >
 				<input id="input-background-color" type="color" name="background-color">
 			</div>
+			
+
+		</div>
+
+		<div class="second-column">
+			
+			
 
 			<label for="input-padding">Padding</label>
 			<input id="input-padding" type="range" min="0" max="5" step="0.01" name="padding">
@@ -63,12 +70,20 @@
 
 			<label for="input-margin-top">Margin Top</label>
 			<input id="input-margin-top" type="range" min="0" max="90" step="0.1" name="margin-top"  >
+			
+			<label for="input-padding">Padding</label>
+			<input id="input-padding" type="range" min="0" max="5" step="0.01" name="padding">
+			<label for="visibility">Visibility</label>
+			<input class="masked" type="checkbox" id="visibility" name="visibility" checked/>
+			<label class="switch-label" for="visibility">Danger</label>
 
+			<label for="input-margin-left">Margin Left</label>
+			<input id="input-marign-left" type="range" min="0" max="80" step="0.1" name="margin-left">
 
+			<label for="input-margin-top">Margin Top</label>
+			<input id="input-margin-top" type="range" min="0" max="90" step="0.1" name="margin-top">
 
-
-
-		
+		</div>
 
 	</form>
 
