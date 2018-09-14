@@ -3,6 +3,14 @@
 	margin-left: 0;
 }
 
+form{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	overflow: auto;
+	height: 100vh;
+}
+
 body{
 	padding-bottom: 3rem;
 	display: grid;
@@ -19,11 +27,12 @@ label{
 input,
 textarea{
 	display: block;
-	border-radius: 0;
+	border-radius: 5px;
 	border:1px solid grey;
 	background-color: white;
-	width: 100%;
+	width: 50%;
 	line-height: 1.25rem;
+
 }
 input:focus,
 textarea:focus{
@@ -45,6 +54,14 @@ textarea:focus{
 	padding-left: 0;
 	padding-right: 0;
 	text-indent: 0.25rem;
+}
+
+[type="color"]{
+	padding:0;
+	border:0;
+	width: 4.625rem;
+	height: 4.625rem;
+
 }
 
 
@@ -280,4 +297,10 @@ but only in browsers where removing the style does NOT break the select
 	}
 
 }
+.editor-block > .thing{
+	flex-wrap: wrap;
+}
 
+.editor-block{
+	overflow: hidden;
+}

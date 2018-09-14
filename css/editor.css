@@ -6,6 +6,7 @@ body{
 	height: 100%;
 	overflow: hidden;
 	background-color: #222325;
+	line-height: 2rem;
 
 }
 body{
@@ -27,4 +28,8 @@ body{
 .thing{
 	background-color: white;
 	margin: auto;
+}
+
+input{
+	
 }
