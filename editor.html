@@ -11,7 +11,7 @@
 			
 		<div class="first-column">
 			<input type="textarea" placeholder="Please Enter Some Text" id="input-text" name="text">
-			<label for="input-text" class="textarea"></label>
+			<label for="input-text" class="textarea">Please enter text</label>
 
 			<div class="radios-block">
 				<input class="masked" type="radio" id="input-font-family-helvetica" name="font-family" value="Helvetica" />
@@ -19,12 +19,22 @@
 				<input class="masked" type="radio" id="input-font-family-georgia" value="halit" name="font-family" value="Georgia" />
 				<label for="input-font-family-georgia" class="radio-label" >Georgia</label>
 				<input class="masked" type="radio" id="input-font-family-courier" name="font-family" value="Courier" />
-				<label for="input-font-family-courier" class="radio-label" >Courier</label>
+				<label for="input-font-family-courier" class="radio-label">Courier</label>
 			</div>
 
-			
 			<label for="input-font-size">Font Size</label>
-			<input id="input-font-size" type="number" min="1" max="5" step="0.0625" name="font-size" >
+			<div class="font-size-group">
+				<input id="input-font-size" type="number" min="1" max="5" step="0.0625" name="font-size" >
+				<select name="unit" autocomplete="off" id="unit">
+					<option value="" selected >Unit</option>
+					<option value="em">em</option>
+					<option value="rem">rem</option>
+					<option value="%">%</option>
+					<option value="px">px</option>
+					<option value="deg">deg</option>			
+				</select>
+
+			</div>
 			<label for="input-letter-spacing">Letter Spacing</label>
 			<input id="input-letter-spacing" type="number" min="0" max="3" step="0.0625" name="letter-spacing" >
 			<label for="input-line-heigth">Line Height</label>
@@ -39,6 +49,8 @@
 				<option value="pointer">Pointer</option>
 				<option value="resize">Resize</option>			
 			</select>
+
+			
 
 			<label for="input-rotate">Rotate</label>
 			<input id="input-rotate" type="range" min="0" max="360" step="0.1" name="rotate"  >
@@ -63,20 +75,7 @@
 			<input id="input-padding" type="range" min="0" max="5" step="0.01" name="padding">
 			<label for="visibility">Visibility</label>
 			<input class="masked" type="checkbox" id="visibility" name="visibility" checked/>
-			<label class="switch-label" for="visibility">Danger</label>
-
-			<label for="input-margin-left">Margin Left</label>
-			<input id="input-marign-left" type="range" min="0" max="80" step="0.1" name="margin-left">
-
-			<label for="input-margin-top">Margin Top</label>
-			<input id="input-margin-top" type="range" min="0" max="90" step="0.1" name="margin-top"  >
 			
-			<label for="input-padding">Padding</label>
-			<input id="input-padding" type="range" min="0" max="5" step="0.01" name="padding">
-			<label for="visibility">Visibility</label>
-			<input class="masked" type="checkbox" id="visibility" name="visibility" checked/>
-			<label class="switch-label" for="visibility">Danger</label>
-
 			<label for="input-margin-left">Margin Left</label>
 			<input id="input-marign-left" type="range" min="0" max="80" step="0.1" name="margin-left">
 
