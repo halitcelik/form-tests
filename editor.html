@@ -23,9 +23,9 @@
 			</div>
 
 			<label for="input-font-size">Font Size</label>
-			<div class="font-size-group">
-				<input id="input-font-size" type="number" min="1" max="5" step="0.0625" name="font-size" >
-				<select name="unit" autocomplete="off" id="unit">
+			<div class="selector-unit">
+				<input id="font-size" type="number" min="1" max="5" step="0.0625" name="font-size" >
+				<select name="font-size-unit" autocomplete="off" id="font-size-unit">
 					<option value="" selected >Unit</option>
 					<option value="em">em</option>
 					<option value="rem">rem</option>
@@ -36,9 +36,29 @@
 
 			</div>
 			<label for="input-letter-spacing">Letter Spacing</label>
-			<input id="input-letter-spacing" type="number" min="0" max="3" step="0.0625" name="letter-spacing" >
+			<div class="selector-unit">
+				<input id="input-letter-spacing" type="number" min="0" max="3" step="0.0625" name="letter-spacing" >
+				<select name="unit" autocomplete="off" id="unit">
+						<option value="" selected >Unit</option>
+						<option value="em">em</option>
+						<option value="rem">rem</option>
+						<option value="%">%</option>
+						<option value="px">px</option>
+						<option value="deg">deg</option>			
+					</select>
+			</div>
 			<label for="input-line-heigth">Line Height</label>
-			<input id="input-line-heigth" type="number" min="0" max="2" step="0.0625" name="line-heigth" >
+			<div class="selector-unit">
+				<input id="input-line-heigth" type="number" min="0" max="2" step="0.0625" name="line-heigth" >
+				<select name="unit" autocomplete="off" id="unit">
+					<option value="" selected >Unit</option>
+					<option value="em">em</option>
+					<option value="rem">rem</option>
+					<option value="%">%</option>
+					<option value="px">px</option>
+					<option value="deg">deg</option>			
+				</select>
+			</div>
 
 			<label for="input-opacity">Opacity</label>
 			<input id="input-opacity" type="range" min="0" max="1" step="0.01" name="opacity"  >
@@ -56,21 +76,28 @@
 			<input id="input-rotate" type="range" min="0" max="360" step="0.1" name="rotate"  >
 
 			<label for="input-border-radius">Border Radius</label>
-			<input id="input-border-radius" type="number" min="0" max="0.5" step="0.01" name="border-radius" >
+			<div class="selector-unit">
+				<input id="input-border-radius" type="number" min="0" max="0.5" step="0.01" name="border-radius" >
+				<select name="unit" autocomplete="off" id="unit">
+					<option value="" selected >Unit</option>
+					<option value="em">em</option>
+					<option value="rem">rem</option>
+					<option value="%">%</option>
+					<option value="px">px</option>
+					<option value="deg">deg</option>			
+				</select>
+			</div>
+
 			<div class="color-pickers">
 				<label for="input-color">Color</label>
 				<label for="input-background-color">Background Color</label>
 				<input id="input-color" type="color" name="color" shape="poly" >
 				<input id="input-background-color" type="color" name="background-color">
 			</div>
-			
-
 		</div>
 
 		<div class="second-column">
 			
-			
-
 			<label for="input-padding">Padding</label>
 			<input id="input-padding" type="range" min="0" max="5" step="0.01" name="padding">
 			<label for="visibility">Visibility</label>

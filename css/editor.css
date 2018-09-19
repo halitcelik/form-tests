@@ -27,11 +27,13 @@ body{
 
 .editor-block{
 	display: flex;
+	align-items: center;
+	place-content: center;
 }
 
 .thing{
 	background-color: white;
-	margin: auto;
+	height: 40px;
 }
 body{
 	display: grid;
@@ -42,7 +44,16 @@ form{
 	grid-template-columns: 1fr 1fr;
 }
 
-.font-size-group{
+.selector-unit{
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.selector-unit > input{
+	width: 100%;
+}
+.selector-unit > select{
+	margin-top: 3px;
+	margin-left:10px;
+
 }
